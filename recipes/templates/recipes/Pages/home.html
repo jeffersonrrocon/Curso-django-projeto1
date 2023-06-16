@@ -1,16 +1,18 @@
 {% include 'recipes/Partials/head.html' %}
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a class="main-logo" href="/">
-                    <i class="fa-solid fa-truck"></i>
-                    <span>{{name}}</span>
-                </a>
-            </h1>
+    {% include 'recipes/Partials/header.html' %}
+    {% include 'recipes/Partials/search-container.html' %}
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include 'recipes/Partials/recipe.html' %}
+                
+            </div>
         </div>
-    </header>
+
+    </main>
+    {% include 'recipes/Partials/footer.html' %}
 </body>
 
 </html>
