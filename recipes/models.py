@@ -4,15 +4,15 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField(max_length=65)
-        
+
     def __str__(self):
         return self.name
-    
+
 
 class Recipe(models.Model):
     title = models.CharField(max_length=65)
     description = models.CharField(max_length=165)
-    slug = models.SlugField() 
+    slug = models.SlugField()
     preparation_time = models.IntegerField()
     preparation_time_unit = models.CharField(max_length=65)
     servings = models.IntegerField()
